@@ -1,0 +1,80 @@
+/* Resetowanie domyślnych stylów przeglądarki */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2c3e50; /* Ciemne tło strony */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculator {
+    background-color: #34495e;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+    width: 320px;
+}
+
+.display {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    text-align: right;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 równe kolumny */
+    gap: 12px; /* Odstępy między przyciskami */
+}
+
+.btn {
+    background-color: #95a5a6;
+    color: #fff;
+    border: none;
+    padding: 18px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #7f8c8d;
+}
+
+/* Wyróżnione style dla operatorów, C i = */
+.operator {
+    background-color: #f39c12;
+}
+
+.operator:hover {
+    background-color: #d68910;
+}
+
+.clear {
+    background-color: #e74c3c;
+}
+
+.clear:hover {
+    background-color: #c0392b;
+}
+
+.equals {
+    background-color: #2ecc71;
+}
+
+.equals:hover {
+    background-color: #27ae60;
+}
